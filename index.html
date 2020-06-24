@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W4Lab1</title>
+
+    <Script>
+        let numScore = 0
+        let data1 = 0
+
+        while (1) {
+            let currData = prompt('Your Q?')
+            if (!Number(currData)) {
+                alert('Data is not number')
+            } else {
+                numScore = parseInt(currData)
+                if (!(numScore >= 1 && numScore <= 100)) {
+                    alert('Number is not rang 1 -100')
+                } else {
+                    if (data1 === 0) {
+                        data1 = numScore
+                    } else {
+                        if (data1 === numScore) {
+                            alert('OK')
+                            break;
+                        }
+                    }
+                    console.log(data1)
+                }
+            }
+        }
+    </Script>
+</head>
+
+<body>
+
+</body>
+
+</html>
